@@ -26,7 +26,7 @@ function Boss(game, x, y) {
     this.ctx = game.ctx;
     this.visualRadius = 1000;
     this.maxSpeed = 80;
-	this.healthMAX = 2000;
+	this.healthMAX = 20000;
     this.health = this.healthMAX;
     this.attackRange = 50; // always make sure attack range is larger than comfort zone
     this.comfortZone = 25;

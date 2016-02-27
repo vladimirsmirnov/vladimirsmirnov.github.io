@@ -2,13 +2,20 @@ function HealthPack(game, image) {
     NonLivingEntity.prototype.setNonLiving.call(this, true);
     this.image = image;
     this.game = game;
-    this.x = 100;
-    this.y = 100;
+    this.spawnPoints = [];
+    this.spawnPoints[0] = { x: 500, y: 1150 };
+    this.spawnPoints[1] = { x: 1270, y: 1050 };
+    this.spawnPoints[2] = { x: 970, y: 335 };
+
+    var spawnpoint = this.spawnPoints[Math.floor(Math.random() * this.spawnPoints.length)];
+
+    this.x = spawnpoint.x;
+    this.y = spawnpoint.y;
     this.width = 46;
     this.height = 31;
 
-    this.canvasX = 100;
-    this.canvasY = 100;
+    this.canvasX = spawnpoint.x;
+    this.canvasY = spawnpoint.y;
 
     this.radius = 40;
     this.name = "HealthPack";

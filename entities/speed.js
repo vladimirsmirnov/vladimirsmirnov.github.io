@@ -4,11 +4,10 @@ function Speed(game, image) {
     this.game = game;
 
     this.spawnPoints = [];
-    this.spawnPoints[0] = { x: 150, y: 110 };
-    this.spawnPoints[1] = { x: 500, y: 360 };
-    this.spawnPoints[2] = { x: 570, y: 150 };
-    this.spawnPoints[3] = { x: 100, y: 630 };
-    this.spawnPoints[0] = { x: 920, y: 390 };
+    this.spawnPoints[0] = { x: 640, y: 450 };
+    this.spawnPoints[1] = { x: 1300, y: 700 };
+    this.spawnPoints[2] = { x: 1000, y: 1170 };
+
 
     var spawnpoint = this.spawnPoints[Math.floor(Math.random() * this.spawnPoints.length)];
 

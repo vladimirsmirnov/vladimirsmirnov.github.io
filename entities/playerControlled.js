@@ -21,7 +21,6 @@ function playerControlled(game) {
     this.spawnPoints[7] = { x: 138, y: 688 };
     this.spawnPoints[8] = { x: 449, y: 672 };
     this.spawnPoints[9] = { x: 136, y: 888 };
-    this.spawnPoints[10] = { x: 298, y: 1192};
     this.spawnPoints[11] = { x: 664, y: 416 };
     this.spawnPoints[12] = { x: 190, y: 80 };
     
@@ -68,7 +67,7 @@ function playerControlled(game) {
 
     this.ability1Attributes.activate = false;
 
-   // this.maxSpeed = 200;
+  //  this.maxSpeed = 200;
 
     this.timerForSpeed = 0;
     this.originalSpeed = 100;
@@ -78,7 +77,7 @@ playerControlled.prototype = new LivingEntity();
 playerControlled.prototype.constructor = playerControlled;
 
 playerControlled.prototype.upSpeed = function() {
-    this.timerForSpeed = 4; 
+    this.timerForSpeed = 8; 
     this.maxSpeed = 175;
 }
 
