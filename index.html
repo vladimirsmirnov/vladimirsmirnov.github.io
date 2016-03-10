@@ -1,61 +1,20 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Zombie Attack</title>
-
-    <style>
-    #gameWorld {
-        cursor: url("./images/TargetCursor.png") 15 15, auto;
-
-    }
-    </style>
+    <title>Game Project Shell</title>
+    <script type="text/javascript" src="./gameengine.js"></script>
+    <script type="text/javascript" src="./assetmanager.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <script type="text/javascript" src="http://76.28.150.193:8888/socket.io/socket.io.js"></script>
 </head>
 <body>
-<!--     <div style="float:right;width:400px; margin: 20px;">
-        <h1>Changes I made to the game:</h1>
-        <h2>Player Controlled AI</h2>
-        <p>
-            The player controlled AI now moves closer to you
-            as you move farther away from its vision. To adjust the
-            distance of the player controlled AI in reference to the player,
-            change the variable: <strong>spaceBetweenPlayerControlled</strong>. 
-        </p>
-        <h2>Spawning Speed Increase</h2>
-        <p>
-            The spawning speed or the zombieCooldownNum starts to go down
-            as the player gets farther and farther away from the origin (top-left corner) of the game.
-        </p>
-        <h2>Swap Player Controlled Players</h2>
-        <p>
-            You can now swap player controlled characters. Just press
-            one of the numbers. You start with player controlled 1, and then
-            you can press 2 to swap to player controlled 2. Or three if there was
-            a third player controlled character.
-        </p>
-    </div> -->
-    <canvas id="gameWorld" width="800" height="800" style="border: 1px solid white; background: black"></canvas>
-
+	<h2> Die after 30 collisions. New spawn after 10 clock ticks. </h2>
+    <canvas id="gameWorld" tabindex="1" width="550" height="353" style="border: 1px solid brown; background: lightskyblue"></canvas>
+    <div>
+	    <button id="save" >Save</button>
+	    <button id="load" >Load</button>
+	</div>
 </body>
-
-    <script type="text/javascript" src="./game/corefunctions.js"></script>
-    <script type="text/javascript" src="./game/gameengine.js"></script>
-    <script type="text/javascript" src="./game/assetmanager.js"></script>
-    <script type="text/javascript" src="./game/animation.js"></script>
-
-    <!-- Add Entity files here-->
-    <script type="text/javascript" src="./entities/entitiesabstract.js"></script>
-    <script type="text/javascript" src="./entities/playerControlled.js"></script>    
-    <script type="text/javascript" src="./entities/projectile.js"></script>    
-    <script type="text/javascript" src="./entities/villain.js"></script> 
-    <script type="text/javascript" src="./entities/zombie.js"></script> 
-    <script type="text/javascript" src="./entities/wall.js"></script> 
-    <script type="text/javascript" src="./entities/flamethrower.js"></script>
-	<script type="text/javascript" src="./entities/healthpack.js"></script>
-    <script type="text/javascript" src="./entities/speed.js"></script>
-    <script type="text/javascript" src="./entities/map.js"></script>
-    <script type="text/javascript" src="./entities/boss.js"></script>
-    <script type="text/javascript" src="./entities/portal.js"></script>
-
-    <script type="text/javascript" src="./game/main.js"></script>
 </html>
